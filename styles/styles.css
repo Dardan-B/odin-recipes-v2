@@ -18,7 +18,7 @@ h2 {
 p {
     text-indent: 3rem;
 }
-p, ol, ul {
+p, ul, ol {
     text-align: justify;
     padding-left: 7.5%;
     padding-right: 7.5%;
@@ -27,6 +27,10 @@ ul ul,
 ol ul {
     list-style-type: disc;
     padding-right: 0%;
+}
+a {
+    color: black;
+
 }
 
 /* classes */
@@ -40,6 +44,7 @@ ol ul {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0px 0px 10px 2px grey;
 }
 .nav-bar {
     width: 100%;
@@ -47,16 +52,28 @@ ol ul {
     font-size: 26px;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    background-color: black;
 }
 .nav-link {
     color: white;
     text-decoration: none;
 }
+.image-box {
+    max-width: 450px;
+}
+.recipe-image {
+    max-width: 100%;
+    display: block; /* gets rid of bar under image */
+}
+.measure {
+    display: inline-block;
+    width: 4.2rem;
+}
+.product {
+    display: inline-block; /* without 'block' -> wraps to next line */
+}
 
 /* test classes; remove later */
-.a {
-    background-color: grey;
-}
 .b1 {
     background-color: lightgreen;
 }
