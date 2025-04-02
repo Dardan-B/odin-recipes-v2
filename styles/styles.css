@@ -1,0 +1,53 @@
+/* elements */
+
+ul ul,
+ol ul {
+    list-style-type: disc;
+}
+
+
+/* classes */
+.base-page {
+    background-color: lightgrey;
+}
+.section {
+    background-color: lightgoldenrodyellow;
+}
+
+/* test classes; remove later */
+.a {
+    background-color: grey;
+}
+.b1 {
+    background-color: lightgreen;
+}
+.b2 {
+    background-color: lightgreen;
+}
+.c {
+    background-color: lightyellow;
+}
+.d1 {
+    background-color: lightcoral;
+}
+.d2 {
+    background-color: lightcoral;
+}
+.e {
+    background-color: lightseagreen;
+}
+.f1 {
+    background-color: lightslategray;
+}
+.f2 {
+    background-color: lightslategray;
+}
+.g {
+    background-color: lightsalmon;
+}
+.h {
+    background-color: lightpink;
+}
+.i {
+    background-color: lightblue;
+}
