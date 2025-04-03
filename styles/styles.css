@@ -25,6 +25,7 @@ ul ul,
 ol ul {
     list-style-type: disc;
     padding-right: 0%;
+    
 }
 a {
     color: black;
@@ -33,16 +34,27 @@ div {
     margin-left: auto;
     margin-right: auto;
 }
+li {
 
+}
 /* classes */
 .base-page {
-    background-color: lightgrey;
+    background:
+    linear-gradient(
+        to right,
+        rgb(0, 0, 0, .26),
+        rgb(0, 0, 0, .16) 7.5%,
+        rgba(0, 0, 0, .06) 15%,
+        rgba(0, 0, 0, 0) 22.5%,
+        rgba(0, 0, 0, 0) 77.5%,
+        rgba(0, 0, 0, .06) 85%,
+        rgb(0, 0, 0, .16) 92.5%,
+        rgb(0, 0, 0, .26));
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 16px;
     padding-bottom: 2rem;
 }
 .section {
-    background-color: black;
     width: 70%;
     margin-top: 2rem;
 }
@@ -82,43 +94,42 @@ div {
 .product {
     display: inline-block; /* without 'block' -> wraps to next line */
 }
+.card {
+    border-radius: 0rem;
+    padding-bottom: 1rem;
+    box-shadow: 0px 0px 10px 0px black;
+}
 .card h2 {
     padding-top: 1rem;
     padding-bottom: 1rem;
+    background-image: 
+    linear-gradient(
+        to top,
+        coral 2px,
+        transparent 2px);
 }
-.card {
-    border-radius: 1rem;
-    padding-bottom: 1rem;
+.card ul,
+.card ol {
+    background-image: 
+    repeating-linear-gradient(
+        to top,
+        lightskyblue 0 2px,
+        transparent 2px 1lh);
+    line-height: 1.5rem;
 }
-
 /* test classes; remove later */
-.b1 {
-    background-color: lightgrey;
+.ingre {
+    background-color: lavender;
 }
-.b2 {
-    background-color: lightgreen;
+.tools {
+    background-color: #EFB6BC;
 }
-.d1 {
-    background-color: lightgrey;
+.before {
+    background-color: lightgoldenrodyellow;
 }
-.d2 {
-    background-color: lightcoral;
+.steps {
+    background-color: #C8F2D7;
 }
-.e {
-    background-color: lightseagreen;
-}
-.f1 {
-    background-color: lightslategray;
-}
-.f2 {
-    background-color: lightslategray;
-}
-.g {
-    background-color: lightsalmon;
-}
-.h {
-    background-color: lightpink;
-}
-.i {
+.after {
     background-color: lightblue;
 }
