@@ -1,19 +1,17 @@
 /* elements */
-
 body, a, p, h1, h2, img, ul, ol {
     margin: 0px;
 }
-
-
 h1, h2 {
     text-align: center;
-    line-height: 26px;
 }
 h1 {
     font-size: 42px;
+    line-height: 32px;
 }
 h2 {
     font-size: 26px;
+    line-height: 26px;
 }
 p {
     text-indent: 3rem;
@@ -30,21 +28,23 @@ ol ul {
 }
 a {
     color: black;
-
 }
 div {
     margin-left: auto;
     margin-right: auto;
 }
+
 /* classes */
 .base-page {
     background-color: lightgrey;
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 16px;
+    padding-bottom: 2rem;
 }
 .section {
     background-color: black;
     width: 70%;
+    margin-top: 2rem;
 }
 .nav-bar {
     width: 100%;
@@ -53,18 +53,27 @@ div {
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: black;
+    box-shadow: 0px 0px 10px 5px black;
 }
 .nav-link {
     color: white;
     text-decoration: none;
 }
+.title h2 {
+    padding-top: .5rem;
+}
 .image-box {
     max-width: 450px;
-    box-shadow: 0px 0px 10px 2px grey;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px 0px black;
 }
 .recipe-image {
     max-width: 100%;
+    border-radius: 1rem;
     display: block; /* gets rid of bar under image */
+}
+.section .p-n {
+    padding-top: .5rem; /* use on <p>: n > 1; where n is the paragraph number */
 }
 .measure {
     display: inline-block;
@@ -73,16 +82,24 @@ div {
 .product {
     display: inline-block; /* without 'block' -> wraps to next line */
 }
+.card h2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.card {
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+}
 
 /* test classes; remove later */
 .b1 {
-    background-color: lightgreen;
+    background-color: lightgrey;
 }
 .b2 {
     background-color: lightgreen;
 }
 .d1 {
-    background-color: lightcoral;
+    background-color: lightgrey;
 }
 .d2 {
     background-color: lightcoral;
