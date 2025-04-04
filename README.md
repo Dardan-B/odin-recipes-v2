@@ -1,3 +1,3 @@
-# odin-recipes
+# odin-recipes-v2
 
-This current project demonstrates the HTML I've learned thus far through the curriculum provided by The Odin Project.
+This project demonstrates the CSS I've learned from progressing in The Odin Project curriculum up to the section "The Cascade" and reading the supplemental resources provided. The base of the project uses a previous project entitled "odin-recipes"; a basic recipe website built strictly with HTML files. The goal for "odin-recipes-v2" is to add style to the HTML pages using External CSS from a linked .css file.
