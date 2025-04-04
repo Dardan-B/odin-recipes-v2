@@ -2,6 +2,19 @@
 body, a, p, h1, h2, img, ul, ol {
     margin: 0px;
 }
+body {
+    background:
+    linear-gradient(
+        to right,
+        rgb(0, 0, 0, .26),
+        rgb(0, 0, 0, .16) 7.5%,
+        rgba(0, 0, 0, .06) 15%,
+        rgba(0, 0, 0, 0) 22.5%,
+        rgba(0, 0, 0, 0) 77.5%,
+        rgba(0, 0, 0, .06) 85%,
+        rgb(0, 0, 0, .16) 92.5%,
+        rgb(0, 0, 0, .26));
+}
 div {
     margin-left: auto;
     margin-right: auto;
@@ -35,17 +48,6 @@ a {
 }
 /* classes */
 .base-page {
-    background:
-        linear-gradient(
-            to right,
-            rgb(0, 0, 0, .26),
-            rgb(0, 0, 0, .16) 7.5%,
-            rgba(0, 0, 0, .06) 15%,
-            rgba(0, 0, 0, 0) 22.5%,
-            rgba(0, 0, 0, 0) 77.5%,
-            rgba(0, 0, 0, .06) 85%,
-            rgb(0, 0, 0, .16) 92.5%,
-            rgb(0, 0, 0, .26));
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 16px;
     padding-bottom: 2rem;
@@ -124,7 +126,8 @@ a {
 .tools li,
 .before li,
 .steps li,
-.after li {
+.after li, 
+#recipes li {
     border-radius: .4rem;
     padding-left: .4rem;
     padding-right: .4rem;
@@ -144,3 +147,14 @@ a {
 .steps li {     background-color: #C8F2D7;}
 .after h2 {     color: lightblue;}
 .after li {     background-color: lightblue;}
+#home-bar {
+    height: 31px;
+}
+#recipes h1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-shadow: 0px 0px 1px black;
+}
+#recipes {
+    padding-bottom: 1rem;
+}
