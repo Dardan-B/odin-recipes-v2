@@ -2,6 +2,10 @@
 body, a, p, h1, h2, img, ul, ol {
     margin: 0px;
 }
+div {
+    margin-left: auto;
+    margin-right: auto;
+}
 h1, h2 {
     text-align: center;
 }
@@ -25,31 +29,23 @@ ul ul,
 ol ul {
     list-style-type: disc;
     padding-right: 0%;
-    
 }
 a {
     color: black;
 }
-div {
-    margin-left: auto;
-    margin-right: auto;
-}
-li {
-
-}
 /* classes */
 .base-page {
     background:
-    linear-gradient(
-        to right,
-        rgb(0, 0, 0, .26),
-        rgb(0, 0, 0, .16) 7.5%,
-        rgba(0, 0, 0, .06) 15%,
-        rgba(0, 0, 0, 0) 22.5%,
-        rgba(0, 0, 0, 0) 77.5%,
-        rgba(0, 0, 0, .06) 85%,
-        rgb(0, 0, 0, .16) 92.5%,
-        rgb(0, 0, 0, .26));
+        linear-gradient(
+            to right,
+            rgb(0, 0, 0, .26),
+            rgb(0, 0, 0, .16) 7.5%,
+            rgba(0, 0, 0, .06) 15%,
+            rgba(0, 0, 0, 0) 22.5%,
+            rgba(0, 0, 0, 0) 77.5%,
+            rgba(0, 0, 0, .06) 85%,
+            rgb(0, 0, 0, .16) 92.5%,
+            rgb(0, 0, 0, .26));
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 16px;
     padding-bottom: 2rem;
@@ -65,19 +61,23 @@ li {
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: black;
-    box-shadow: 0px 0px 10px 5px black;
+    box-shadow: 0px 0px 10px 0px black;
 }
 .nav-link {
     color: white;
     text-decoration: none;
 }
+.title h1,
+.title h2 {
+    text-shadow: 0px 0px 1px black;
+}
 .title h2 {
     padding-top: .5rem;
 }
 .image-box {
-    max-width: 450px;
+    max-width: 424px;
     border-radius: 1rem;
-    box-shadow: 0px 0px 10px 0px black;
+    box-shadow: 0px 0px 6px 0px black;
 }
 .recipe-image {
     max-width: 100%;
@@ -85,51 +85,62 @@ li {
     display: block; /* gets rid of bar under image */
 }
 .section .p-n {
-    padding-top: .5rem; /* use on <p>: n > 1; where n is the paragraph number */
+    padding-top: .5rem; /* use on all subsequent <p> after first */
 }
 .measure {
     display: inline-block;
     width: 4.2rem;
 }
 .product {
-    display: inline-block; /* without 'block' -> wraps to next line */
+    display: inline-block; /* without 'block' -> wraps to next line on smaller width pages */
 }
 .card {
-    border-radius: 0rem;
-    padding-bottom: 1rem;
-    box-shadow: 0px 0px 10px 0px black;
+    border-radius: 1rem;
+    padding-bottom: .4rem;
+    box-shadow: 0px 0px 6px 0px black;
+    background-color: white;
 }
 .card h2 {
+    text-shadow: 0px 0px 10px black;
     padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-image: 
-    linear-gradient(
-        to top,
-        coral 2px,
-        transparent 2px);
+    padding-bottom: .4rem;
+    /*background-image: 
+        linear-gradient(
+            to top,
+            coral 2px,
+            transparent 2px);*/
+    text-shadow: 0px 0px .15rem rgb(0 0 0);
 }
 .card ul,
 .card ol {
+    line-height: 1.2rem;/*
     background-image: 
-    repeating-linear-gradient(
-        to top,
-        lightskyblue 0 2px,
-        transparent 2px 1lh);
-    line-height: 1.5rem;
+        repeating-linear-gradient(
+            to top,
+            lightskyblue 0 2px,
+            transparent 2px 1lh);*/
 }
-/* test classes; remove later */
-.ingre {
-    background-color: lavender;
+.ingre li,
+.tools li,
+.before li,
+.steps li,
+.after li {
+    border-radius: .4rem;
+    padding-left: .4rem;
+    padding-right: .4rem;
+    padding-top: .24rem;
+    padding-bottom: .24rem;
+    margin-top: .6rem;
+    margin-bottom: .6rem; 
+    box-shadow: 0px 0px 4px 0px rgb(127, 127, 127);
 }
-.tools {
-    background-color: #EFB6BC;
-}
-.before {
-    background-color: lightgoldenrodyellow;
-}
-.steps {
-    background-color: #C8F2D7;
-}
-.after {
-    background-color: lightblue;
-}
+.ingre h2 {     color: lavender;}
+.ingre li {     background-color: lavender;}
+.tools h2 {     color: #EFB6BC}
+.tools li {     background-color: #EFB6BC;}
+.before h2 {    color: lightgoldenrodyellow}
+.before li {    background-color: lightgoldenrodyellow;}
+.steps h2 {     color: #C8F2D7;}
+.steps li {     background-color: #C8F2D7;}
+.after h2 {     color: lightblue;}
+.after li {     background-color: lightblue;}
